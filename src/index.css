@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+  --bg-canvas: #F8F9FC;
+  --bg-surface: #FFFFFF;
+  --bg-elevated: #F1F4F9;
+  --text-primary: #171923;
+  --text-secondary: #697386;
+  --accent-primary: #6558F5;
+  --accent-secondary: #22C5A8;
+  --border-subtle: #E8EAF2;
+  --status-success: #16A873;
+  --status-error: #EF5466;
+  --status-warning: #F2B84B;
+}
+
+.dark {
+  color-scheme: dark;
+  --bg-canvas: #0D1018;
+  --bg-surface: #171C28;
+  --bg-elevated: #202738;
+  --text-primary: #F5F7FC;
+  --text-secondary: #9BA6BB;
+  --accent-primary: #8D83FF;
+  --accent-secondary: #38D9A9;
+  --border-subtle: #273044;
+  --status-success: #38D9A9;
+  --status-error: #F87171;
+  --status-warning: #FBBF24;
+}
+
+html {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-mono-typing {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-variant-ligatures: none;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes caret-blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0.2;
+  }
+}
+
+.typing-caret {
+  animation: caret-blink 1.05s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .typing-caret {
+    animation: none;
+  }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,1385 @@
+# ULTIMATE MASTER DEVELOPMENT PROMPT
+## Build a Premium Typing Learning Platform — Created by Nexora Studios
+
+### YOUR ROLE
+
+You are an elite full-stack software engineer, senior UI/UX designer, interactive learning specialist, frontend architect, backend engineer, and performance optimization expert.
+
+Your mission is to build an extraordinary, fully functional, production-ready typing education platform inspired by:
+
+**Reference website:** https://typekaro.websyro.com/learn
+
+**Developer and creator:** Nexora Studios
+
+**Company website:** https://nexorastudios.ai.studio
+
+Do not create a basic landing page, static prototype, or nonfunctional dashboard.
+
+Build a complete application with real typing interactions, accurate performance measurements, structured lessons, interactive animations, working navigation, user progress persistence, and a premium visual experience.
+
+Study the reference website carefully before development. Analyze its information architecture, navigation, learning workflow, lesson progression, typing interactions, keyboard visualization, and general usability.
+
+Recreate the core educational experience and comparable functionality, but create an original visual identity, custom components, original assets, and independent implementation. Do not copy proprietary code, branding, or copyrighted assets.
+
+The finished website must prominently and professionally acknowledge:
+
+**Made by Nexora Studios**
+
+This credit must remain visible in the footer and About page.
+
+---
+
+# 1. PROJECT VISION
+
+Create a modern, highly interactive web application that helps beginners and advanced users learn touch typing, improve typing speed, increase accuracy, and monitor their development.
+
+The platform must feel like a professionally engineered educational SaaS product.
+
+The application should be:
+
+- Visually premium and modern.
+- Extremely responsive.
+- Fast and lightweight.
+- Beginner-friendly.
+- Interactive and engaging.
+- Fully functional.
+- Accessible.
+- Mobile-compatible where practical.
+- Keyboard-first on desktop.
+- Optimized for real learning.
+- Suitable for students, professionals, and typing enthusiasts.
+
+Every important button, lesson, keyboard key, game, chart, and navigation item must perform a meaningful action.
+
+No fake functionality, fake analytics, or decorative-only interactions.
+
+---
+
+# 2. RECOMMENDED TECHNOLOGY STACK
+
+Use the following production-grade architecture.
+
+Frontend:
+- Next.js with App Router.
+- React.
+- TypeScript in strict mode.
+- Tailwind CSS.
+- Framer Motion or Motion for React.
+- Lucide icons.
+- Zustand for client-side state management.
+- Recharts for analytics.
+- React Hook Form.
+- Zod for input validation.
+
+Backend:
+- Next.js server actions or API routes.
+- Supabase PostgreSQL.
+- Supabase Authentication.
+- Row Level Security.
+- Server-side authorization.
+- Database migrations.
+
+Additional systems:
+- IndexedDB for local learning history.
+- Local storage for non-sensitive preferences.
+- Web Audio API for optional typing sounds.
+- Service worker for supported offline functionality.
+- Server-side session verification.
+- Responsive SVG-based illustrations.
+- Automated testing with Vitest and Playwright.
+
+Use clean, reusable, strongly typed code.
+
+If the execution environment does not support the full stack, implement the complete frontend and create the actual backend integration structure with clear environment configuration. Never pretend that unavailable backend functionality is operational.
+
+---
+
+# 3. PREMIUM DESIGN SYSTEM
+
+The website must look like a premium 2026 educational technology product.
+
+Design direction:
+
+Modern minimalism combined with refined typography, soft gradients, carefully controlled animations, and exceptional usability.
+
+Avoid generic AI-generated dashboards.
+
+## Color palette
+
+Light theme:
+
+- Primary background: #F8F9FC
+- Surface: #FFFFFF
+- Primary text: #171923
+- Secondary text: #697386
+- Primary accent: #6558F5
+- Secondary accent: #22C5A8
+- Border: #E8EAF2
+- Success: #16A873
+- Error: #EF5466
+- Warning: #F2B84B
+
+Dark theme:
+
+- Background: #0D1018
+- Surface: #171C28
+- Elevated surface: #202738
+- Primary text: #F5F7FC
+- Secondary text: #9BA6BB
+- Accent: #8D83FF
+- Success: #38D9A9
+
+Implement theme tokens using CSS variables.
+
+Maintain excellent color contrast and consistent component styling.
+
+## Typography
+
+Use:
+
+- Plus Jakarta Sans or Inter for interface typography.
+- JetBrains Mono for typing exercises and keyboard labels.
+
+Use a consistent typography scale, carefully balanced spacing, and readable line heights.
+
+## Visual elements
+
+Include:
+
+- Smooth rounded cards.
+- Elegant borders.
+- Subtle shadows.
+- Animated progress indicators.
+- Beautiful lesson cards.
+- Refined hover interactions.
+- Interactive keyboard keys.
+- Small, purposeful microanimations.
+- Smooth page transitions.
+- Carefully designed loading skeletons.
+- Premium empty states.
+- Consistent iconography.
+
+Avoid excessive glassmorphism, heavy blur, distracting particles, and unnecessary motion.
+
+The interface should feel exceptionally polished without sacrificing speed.
+
+---
+
+# 4. COMPLETE APPLICATION STRUCTURE
+
+Implement the following pages:
+
+/
+Main landing page.
+
+/learn
+Learning curriculum and lesson progression.
+
+/learn/[lessonId]
+Interactive lesson experience.
+
+/practice
+Free typing practice.
+
+/test
+Timed typing speed tests.
+
+/play
+Typing games.
+
+/progress
+Performance analytics.
+
+/keyboard
+Interactive finger placement guide.
+
+/leaderboard
+Optional competitive rankings.
+
+/profile
+User profile and preferences.
+
+/settings
+Application settings.
+
+/auth/login
+Login.
+
+/auth/register
+Registration.
+
+/about
+Platform information and Nexora Studios credits.
+
+/privacy
+Privacy policy.
+
+/terms
+Terms of service.
+
+All routes must work.
+
+Provide meaningful navigation and proper error handling.
+
+---
+
+# 5. LANDING PAGE
+
+Create an extraordinary homepage.
+
+## Navigation
+
+Left:
+Original platform logo and product name.
+
+Center:
+- Home
+- Learn
+- Practice
+- Play
+- Typing Test
+- Progress
+
+Right:
+- Theme toggle
+- Login / Profile
+- Start Learning button
+
+## Hero section
+
+Use a bold headline such as:
+
+"Master Your Keyboard. Unlock Your Speed."
+
+Supporting text:
+
+"Learn touch typing with interactive lessons, intelligent practice, real-time feedback, and powerful progress tracking."
+
+Primary button:
+Start Learning
+
+Secondary button:
+Take a Typing Test
+
+## Hero visualization
+
+Build an animated interactive keyboard.
+
+When the visitor presses a physical keyboard key:
+
+1. Detect the pressed key.
+2. Highlight the corresponding virtual key.
+3. Animate a subtle key press.
+4. Display immediate visual feedback.
+5. Release the animation naturally.
+
+The keyboard should be a real interactive component, not an image.
+
+## Additional homepage sections
+
+Create:
+
+- How the platform works.
+- Interactive keyboard preview.
+- Learning path overview.
+- Speed and accuracy demonstration.
+- Typing games preview.
+- Progress tracking preview.
+- Platform features.
+- FAQ.
+- Final call to action.
+- Nexora Studios footer.
+
+Use subtle scroll-triggered animations.
+
+---
+
+# 6. COMPLETE LEARNING SYSTEM
+
+The learning page must be one of the most refined parts of the application.
+
+Reference the educational structure of the supplied website.
+
+## Learning dashboard
+
+At the top display:
+
+"Learn Touch Typing"
+
+Subtitle:
+
+"Build confidence with every keystroke. Master the keyboard one lesson at a time."
+
+Include:
+
+- Overall learning progress.
+- Completed lessons.
+- Current lesson.
+- Average accuracy.
+- Total practice time.
+- Current learning streak.
+
+## Lesson progression
+
+Create 10 primary lessons.
+
+### Lesson 1 — Meet the Keyboard
+
+Introduce the keyboard.
+
+Teach:
+- Keyboard layout.
+- Left and right hands.
+- Home position.
+- Finger responsibilities.
+
+Allow users to press keys and see which finger should be used.
+
+No time limit.
+
+### Lesson 2 — Home Row
+
+Teach:
+A S D F J K L ;
+
+Show:
+- Correct finger.
+- Key position.
+- Hand visualization.
+- Practice sequence.
+
+Passing accuracy: 85%.
+
+### Lesson 3 — Left Hand
+
+Teach:
+A S D F G E R T C V
+
+Focus on left-hand coordination.
+
+Passing accuracy: 85%.
+
+### Lesson 4 — Right Hand
+
+Teach:
+J K L ; H U I O N M
+
+Focus on right-hand coordination.
+
+Passing accuracy: 85%.
+
+### Lesson 5 — Top Row
+
+Teach:
+Q W E R T Y U I O P
+
+Practice correct reaches and returning to the home row.
+
+Passing accuracy: 85%.
+
+### Lesson 6 — Bottom Row
+
+Teach:
+Z X C V B N M
+
+Practice accurate lower-row finger movements.
+
+Passing accuracy: 85%.
+
+### Lesson 7 — Complete Alphabet
+
+Combine all alphabetic characters.
+
+Introduce longer sequences and words.
+
+Passing accuracy: 88%.
+
+### Lesson 8 — Numbers
+
+Teach:
+1 2 3 4 5 6 7 8 9 0
+
+Practice numeric accuracy.
+
+Passing accuracy: 85%.
+
+### Lesson 9 — Capital Letters and Shift
+
+Teach:
+- Shift usage.
+- Capital letters.
+- Opposite-hand Shift technique.
+- Correct finger movement.
+
+Passing accuracy: 85%.
+
+### Lesson 10 — Real Sentences
+
+Practice:
+- Complete sentences.
+- Spaces.
+- Capital letters.
+- Punctuation.
+- Natural typing rhythm.
+
+Passing accuracy: 90%.
+
+## Lesson card design
+
+Each lesson card should contain:
+
+- Lesson number.
+- Lesson name.
+- Short description.
+- Covered keys.
+- Progress indicator.
+- Completion status.
+- Star rating.
+- Start / Continue button.
+
+Support states:
+
+Locked, Available, In Progress, Completed.
+
+Lessons unlock sequentially after the previous lesson is passed.
+
+Allow users to replay completed lessons.
+
+## Star system
+
+Award stars based on accuracy:
+
+- 70% or above: 1 star.
+- 85% or above: 2 stars.
+- 95% or above: 3 stars.
+
+Passing requirements and star rewards must be calculated independently.
+
+Lesson 1 is exploratory and does not require an accuracy score.
+
+---
+
+# 7. INTERACTIVE TYPING ENGINE
+
+This is the most important technical component.
+
+Create a genuine real-time typing engine.
+
+It must accurately detect keyboard input and calculate performance.
+
+## Typing interface
+
+Show the exercise text inside a large, beautiful typing panel.
+
+Character states:
+
+- Untyped.
+- Current.
+- Correct.
+- Incorrect.
+- Corrected.
+
+Visually distinguish these states.
+
+Add a subtle animated caret.
+
+Automatically scroll long typing passages while keeping the active character visible.
+
+## Keyboard input
+
+Support:
+
+- Physical keyboard input.
+- Backspace.
+- Space.
+- Shift.
+- Capital letters.
+- Punctuation.
+- Numbers.
+- Keyboard layouts where supported.
+- Input method composition where applicable.
+
+Ignore unrelated modifier shortcuts.
+
+Prevent accidental page scrolling during focused typing exercises when the spacebar is used.
+
+Maintain proper focus without trapping the user.
+
+Do not force users to click an invisible text field repeatedly.
+
+## Accuracy calculations
+
+Track:
+
+- Total attempted characters.
+- Correct characters.
+- Incorrect characters.
+- Corrected mistakes.
+- Uncorrected mistakes.
+- Elapsed active time.
+- Raw WPM.
+- Net WPM.
+- Accuracy percentage.
+
+Use documented, mathematically consistent formulas.
+
+For example:
+
+Raw WPM = (characters entered / 5) / elapsed minutes.
+
+Net WPM should account for uncorrected errors using a clearly documented formula.
+
+Accuracy must use a consistent definition across lessons, tests, and analytics.
+
+Protect against division by zero.
+
+Do not calculate meaningful WPM before sufficient elapsed time.
+
+## Timing
+
+Use a monotonic high-resolution clock for active exercise timing.
+
+Start timing on the first valid input.
+
+Pause correctly when the exercise is explicitly paused.
+
+Avoid artificial increases in time when the browser tab is inactive.
+
+Do not use a naive interval counter as the sole timing source.
+
+## Anti-error architecture
+
+Avoid:
+
+- Double-counting input.
+- Duplicate key events.
+- Incorrect Backspace behavior.
+- Broken Shift handling.
+- Cursor desynchronization.
+- Lost focus.
+- Repeated exercise completion.
+- Incorrect statistics after restarting.
+- Memory leaks from keyboard listeners.
+
+Use deterministic state transitions.
+
+---
+
+# 8. INTERACTIVE KEYBOARD VISUALIZATION
+
+Build a realistic, responsive virtual QWERTY keyboard.
+
+The keyboard must include:
+
+- Number row.
+- QWERTY row.
+- Home row.
+- Bottom row.
+- Shift keys.
+- Spacebar.
+- Backspace.
+- Enter.
+- Tab.
+- Relevant punctuation keys.
+
+## Key interactions
+
+When a key is pressed:
+
+- Highlight the matching key.
+- Animate a realistic downward movement.
+- Show the active finger color.
+- Return the key to its resting state on release.
+
+## Finger mapping
+
+Use a standard touch-typing mapping.
+
+Color-code:
+
+- Left pinky.
+- Left ring.
+- Left middle.
+- Left index.
+- Right index.
+- Right middle.
+- Right ring.
+- Right pinky.
+- Thumbs.
+
+Include a legend.
+
+Provide an optional hand diagram that highlights the finger responsible for the current target key.
+
+Use correct handling for Shift and special keys.
+
+The keyboard must remain visually consistent at different screen sizes.
+
+---
+
+# 9. PRACTICE MODE
+
+Create a fully functional practice area.
+
+## Practice categories
+
+- Common English words.
+- Short words.
+- Long words.
+- Sentences.
+- Numbers.
+- Punctuation.
+- Capital letters.
+- Programming symbols.
+- Custom text.
+- Weak-key practice.
+
+## Settings
+
+Allow users to choose:
+
+- Exercise duration.
+- Difficulty.
+- Word count.
+- Punctuation.
+- Numbers.
+- Sound effects.
+- Error highlighting.
+- Keyboard visualization.
+
+## Custom practice
+
+Users can paste or write their own text.
+
+Validate input length.
+
+Never execute user-provided text as code or HTML.
+
+## Intelligent practice
+
+Identify frequently mistyped keys.
+
+Recommend targeted exercises based on actual user performance.
+
+Do not claim that this requires machine learning if deterministic analysis is sufficient.
+
+---
+
+# 10. TYPING SPEED TEST
+
+Create a polished typing test experience.
+
+## Duration options
+
+- 15 seconds.
+- 30 seconds.
+- 60 seconds.
+- 120 seconds.
+
+Also support an optional word-count mode.
+
+## During test
+
+Display:
+
+- Live WPM.
+- Accuracy.
+- Remaining time.
+- Mistakes.
+- Progress.
+
+## Results screen
+
+Show:
+
+- Final WPM.
+- Raw WPM.
+- Accuracy.
+- Correct characters.
+- Incorrect characters.
+- Test duration.
+- Performance graph.
+- Personal best comparison.
+
+Add:
+
+- Retry Test.
+- New Test.
+- View Progress.
+- Share Result.
+
+Share only the statistics explicitly selected by the user.
+
+Generate a polished result card suitable for sharing.
+
+---
+
+# 11. TYPING GAMES
+
+Build genuinely playable games.
+
+## Game 1 — Word Rush
+
+Words appear on screen.
+
+Users type them correctly to earn points.
+
+Increase difficulty gradually.
+
+Include:
+- Score.
+- Combo.
+- Level.
+- Accuracy.
+- Restart.
+
+## Game 2 — Falling Words
+
+Words fall from the top.
+
+Users type them before they reach the bottom.
+
+Use smooth animations.
+
+Increase difficulty based on progress.
+
+## Game 3 — Typing Race
+
+A player-controlled vehicle advances as the user types correctly.
+
+Implement a complete single-player race with clear progress feedback.
+
+Optional multiplayer must use real server synchronization, not simulated opponents presented as real players.
+
+## Game 4 — Keyboard Defender
+
+A friendly arcade-style typing game.
+
+Targets are cleared when the corresponding words are typed.
+
+Use non-graphic visual effects.
+
+## Game 5 — Speed Challenge
+
+Complete as many words as possible within a time limit.
+
+Track high scores.
+
+Every game must have:
+
+- Start screen.
+- Instructions.
+- Functional gameplay.
+- Pause behavior where applicable.
+- End screen.
+- Scoring logic.
+- Restart functionality.
+- Responsive layout.
+
+---
+
+# 12. USER PROGRESS DASHBOARD
+
+Create an analytics dashboard that displays actual user performance.
+
+## Summary cards
+
+- Average WPM.
+- Best WPM.
+- Average accuracy.
+- Total lessons completed.
+- Total practice time.
+- Current streak.
+- Total tests taken.
+
+## Charts
+
+Include:
+
+1. WPM over time.
+2. Accuracy over time.
+3. Practice duration by day.
+4. Lesson completion.
+5. Most frequently mistyped keys.
+6. Personal best history.
+
+Use Recharts.
+
+Provide daily, weekly, and monthly filters.
+
+Charts must update based on persisted data.
+
+Do not invent user statistics.
+
+Display helpful empty states when no data exists.
+
+## Typing heatmap
+
+Create an interactive keyboard heatmap.
+
+Each key should reflect the user's measured error frequency.
+
+Clicking a key should reveal relevant statistics and allow targeted practice.
+
+---
+
+# 13. AUTHENTICATION AND USER ACCOUNTS
+
+Implement real authentication using Supabase.
+
+Support:
+
+- Email registration.
+- Email login.
+- Password reset.
+- Secure logout.
+- Optional supported OAuth providers.
+- Session persistence.
+
+Never store plaintext passwords.
+
+Provide clear authentication error messages.
+
+## Guest mode
+
+Users must be able to practice without registering.
+
+Store guest progress locally.
+
+After login, offer to merge local progress into the user's account.
+
+Avoid overwriting more recent progress.
+
+## Profile
+
+Allow users to edit:
+
+- Display name.
+- Avatar.
+- Typing goals.
+- Preferred difficulty.
+- Sound preferences.
+- Theme.
+- Keyboard layout.
+
+Avoid requesting unnecessary personal information.
+
+---
+
+# 14. DATABASE ARCHITECTURE
+
+Create a normalized PostgreSQL schema.
+
+Recommended tables:
+
+### profiles
+- id
+- display_name
+- avatar_url
+- created_at
+- updated_at
+
+### lessons
+- id
+- title
+- description
+- sequence_number
+- required_accuracy
+- content
+- created_at
+
+### lesson_progress
+- id
+- user_id
+- lesson_id
+- best_accuracy
+- best_wpm
+- stars
+- completed
+- attempts
+- updated_at
+
+### typing_sessions
+- id
+- user_id
+- mode
+- duration_seconds
+- raw_wpm
+- net_wpm
+- accuracy
+- correct_characters
+- incorrect_characters
+- completed_at
+
+### key_statistics
+- id
+- user_id
+- key_identifier
+- attempts
+- errors
+- updated_at
+
+### game_scores
+- id
+- user_id
+- game_type
+- score
+- accuracy
+- created_at
+
+### user_preferences
+- user_id
+- theme
+- sound_enabled
+- keyboard_layout
+- preferred_duration
+- updated_at
+
+### achievements
+- id
+- user_id
+- achievement_type
+- unlocked_at
+
+Create appropriate indexes, foreign keys, constraints, and unique keys.
+
+Enable Row Level Security for user-specific data.
+
+Users must only be able to access or modify their own private progress.
+
+Public leaderboard data must expose only permitted public profile fields.
+
+Validate all incoming data on the server.
+
+---
+
+# 15. ADVANCED USER EXPERIENCE
+
+Implement purposeful interactions throughout the application.
+
+Examples:
+
+- Smooth sidebar transitions.
+- Animated lesson completion.
+- Progress bar transitions.
+- Keyboard press feedback.
+- Achievement notifications.
+- Elegant page loading states.
+- Subtle button hover animations.
+- Animated statistics.
+- Smooth chart transitions.
+- Confetti for significant milestones.
+
+Keep animation durations controlled.
+
+Respect reduced-motion preferences.
+
+Animations must never delay typing input or affect timing accuracy.
+
+## Sidebar
+
+Create a collapsible sidebar.
+
+Navigation:
+- Dashboard
+- Learn
+- Practice
+- Play
+- Test
+- Progress
+- Keyboard Guide
+- Settings
+
+Highlight the active route.
+
+Support keyboard navigation.
+
+## Responsive design
+
+Desktop:
+Full navigation, interactive keyboard, spacious content.
+
+Tablet:
+Adaptive layout and collapsible navigation.
+
+Mobile:
+Compact interface, readable cards, usable settings, and touch-friendly navigation.
+
+Explain where physical keyboard input is recommended.
+
+Do not misrepresent touchscreen typing as equivalent to physical touch-typing practice.
+
+---
+
+# 16. NEXORA STUDIOS BRANDING
+
+The website must clearly identify Nexora Studios as its creator.
+
+Use the exact company name:
+
+**Nexora Studios**
+
+Company website:
+
+https://nexorastudios.ai.studio
+
+## Footer requirement
+
+Include:
+
+"Made by Nexora Studios"
+
+Make "Nexora Studios" clickable.
+
+Link it to:
+
+https://nexorastudios.ai.studio
+
+## Footer design
+
+Use a refined layout with:
+
+Left:
+Product logo and short platform description.
+
+Center:
+Learning, practice, tests, games, and support links.
+
+Right:
+"Designed & Developed by Nexora Studios"
+
+Bottom:
+"© [Current Year] [Platform Name]. Made by Nexora Studios."
+
+Use the actual current year dynamically.
+
+Do not imply that Nexora Studios created the reference website.
+
+## About page
+
+Include a dedicated section:
+
+### Crafted by Nexora Studios
+
+"This platform was designed and developed by Nexora Studios, a digital creative studio specializing in modern websites, custom web applications, interactive experiences, and innovative digital solutions."
+
+Add a button:
+
+"Visit Nexora Studios"
+
+Link it to the company website.
+
+Keep branding elegant and professional.
+
+Do not place intrusive branding over typing exercises.
+
+---
+
+# 17. ACCESSIBILITY
+
+Implement:
+
+- Semantic HTML.
+- Proper heading hierarchy.
+- Visible focus indicators.
+- Keyboard-accessible navigation.
+- Accessible forms.
+- Screen-reader-friendly status announcements.
+- Reduced-motion support.
+- Sufficient color contrast.
+- Descriptive button labels.
+- Properly associated form labels.
+
+Target WCAG 2.2 AA where applicable.
+
+The typing engine must handle focus, input composition, and assistive technologies carefully.
+
+---
+
+# 18. PERFORMANCE REQUIREMENTS
+
+Optimize for:
+
+- Fast initial loading.
+- Minimal JavaScript overhead.
+- Efficient state updates.
+- Smooth typing feedback.
+- Stable animations.
+- Lazy-loaded game modules.
+- Optimized fonts.
+- Responsive rendering.
+- Low layout shift.
+
+Avoid rerendering the entire page on every keystroke.
+
+Separate high-frequency typing state from unrelated UI state.
+
+Use memoization where it demonstrably improves performance.
+
+Aim for strong Core Web Vitals and Lighthouse scores without treating arbitrary scores as proof of correctness.
+
+---
+
+# 19. SECURITY AND PRIVACY
+
+Implement:
+
+- Secure authentication.
+- Authorization checks.
+- Row Level Security.
+- Input validation.
+- Output encoding.
+- Rate limiting where necessary.
+- Secure session handling.
+- Appropriate security headers.
+- Environment variable protection.
+- Database constraints.
+
+Never expose secret keys in client-side bundles.
+
+Do not log complete custom typing passages by default.
+
+Collect only data required for functionality.
+
+Provide clear privacy controls and deletion options.
+
+If analytics are implemented, use privacy-respecting measurement and appropriate consent controls.
+
+---
+
+# 20. TESTING REQUIREMENTS
+
+Create meaningful automated tests.
+
+## Unit tests
+
+Test:
+
+- WPM calculations.
+- Accuracy calculations.
+- Error handling.
+- Backspace behavior.
+- Lesson unlocking.
+- Star awards.
+- Timing calculations.
+- Keyboard mapping.
+- Progress aggregation.
+
+## Integration tests
+
+Test:
+
+- Login.
+- Registration.
+- Saving lesson progress.
+- Loading historical results.
+- Guest progress merge.
+- User-specific data isolation.
+
+## End-to-end tests
+
+Verify:
+
+1. A guest can open the homepage.
+2. A guest can start Lesson 1.
+3. Physical keyboard input updates the virtual keyboard.
+4. Completing a lesson saves progress.
+5. Passing a lesson unlocks the next.
+6. A typing test produces accurate results.
+7. Practice mode works.
+8. Games start and end correctly.
+9. Progress charts display persisted results.
+10. Authentication works.
+11. Theme switching works.
+12. The site is responsive.
+13. Nexora Studios credit appears.
+14. The Nexora Studios link works.
+
+Fix discovered errors before delivery.
+
+---
+
+# 21. IMPLEMENTATION PHASES
+
+Follow this development sequence.
+
+## Phase 1 — Foundation
+
+Set up:
+
+- Project architecture.
+- Dependencies.
+- Design tokens.
+- Global styles.
+- Typography.
+- Navigation.
+- Shared components.
+- Responsive layout.
+
+## Phase 2 — Core typing engine
+
+Implement:
+
+- Input processing.
+- Character state.
+- Timing.
+- Accuracy.
+- WPM.
+- Keyboard visualization.
+- Results calculation.
+
+Test thoroughly.
+
+## Phase 3 — Learning curriculum
+
+Implement:
+
+- 10 lessons.
+- Lesson exercises.
+- Progress tracking.
+- Sequential unlocking.
+- Completion feedback.
+- Star awards.
+
+## Phase 4 — Practice and tests
+
+Implement:
+
+- Practice modes.
+- Timed tests.
+- Custom text.
+- Results screens.
+- Personal best tracking.
+
+## Phase 5 — Games
+
+Build and test all five games.
+
+## Phase 6 — Backend
+
+Implement:
+
+- Database.
+- Authentication.
+- User profiles.
+- Session persistence.
+- Progress synchronization.
+- Security policies.
+
+## Phase 7 — Analytics
+
+Implement:
+
+- Progress dashboard.
+- Charts.
+- Key heatmaps.
+- Historical trends.
+- Achievements.
+
+## Phase 8 — Polish
+
+Add:
+
+- Animations.
+- Accessibility improvements.
+- Responsive refinements.
+- Error states.
+- Loading states.
+- Performance optimization.
+
+## Phase 9 — Production verification
+
+Run:
+
+- Type checking.
+- Linting.
+- Unit tests.
+- Integration tests.
+- End-to-end tests.
+- Production build.
+
+Resolve errors.
+
+---
+
+# 22. STRICT DEVELOPMENT RULES
+
+Follow these rules without exception:
+
+1. Do not build a static mockup instead of a functional application.
+2. Do not create buttons that have no actions.
+3. Do not use fake typing results.
+4. Do not fabricate user statistics.
+5. Do not simulate a backend and claim it is real.
+6. Do not use placeholder navigation.
+7. Do not ignore mobile responsiveness.
+8. Do not remove important features to save development time.
+9. Do not sacrifice typing accuracy for visual animations.
+10. Do not copy proprietary code or assets from the reference.
+11. Do not leave TypeScript errors unresolved.
+12. Do not expose private user data.
+13. Do not hardcode authentication secrets.
+14. Do not break existing functionality when implementing new features.
+15. Do not claim a feature has been tested unless it was actually tested.
+16. Do not hide incomplete features behind decorative UI.
+17. Do not omit the Nexora Studios credit.
+
+Use modular architecture and reusable components.
+
+Prioritize correctness, accessibility, usability, and design quality.
+
+---
+
+# 23. FINAL ACCEPTANCE CRITERIA
+
+The website is complete only when:
+
+- Every primary route renders correctly.
+- All 10 learning lessons function.
+- Typing input is measured correctly.
+- The virtual keyboard responds accurately.
+- Lesson progress persists.
+- Practice mode works.
+- Typing tests calculate real statistics.
+- Games are genuinely playable.
+- Authentication is secure and functional.
+- Progress analytics use actual data.
+- Guest mode works.
+- The website adapts to screen sizes.
+- Light and dark themes work.
+- Nexora Studios branding is present.
+- The production build succeeds.
+- Automated tests pass.
+- No known critical errors remain.
+
+If any requirement remains incomplete, clearly report its status and continue implementing it rather than presenting unfinished work as complete.
+
+---
+
+# 24. FINAL INSTRUCTION TO THE AI DEVELOPER
+
+You are not creating a demonstration.
+
+You are building a complete, professional typing-learning web application for real users.
+
+Use the reference website to understand the educational workflow and interaction patterns.
+
+Then create an original, visually superior, thoughtfully engineered implementation.
+
+Make the platform feel fast, intelligent, responsive, and exceptionally polished.
+
+Every interaction must be intentional.
+
+Every statistic must be meaningful.
+
+Every learning exercise must work.
+
+Every game must be playable.
+
+Every screen must look professionally designed.
+
+Maintain clean code, strong architecture, and real functionality.
+
+**Created by Nexora Studios.**
+
+**Begin implementation now. Build the complete working application, verify it, and report any remaining limitations accurately.**

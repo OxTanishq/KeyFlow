@@ -1,0 +1,6 @@
+{
+  "name": "KeyFlow",
+  "description": "Master touch typing with interactive lessons, real-time WPM and accuracy telemetry, finger placement guides, typing games, and progress analytics. Crafted by Nexora Studios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
